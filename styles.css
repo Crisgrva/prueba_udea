@@ -463,7 +463,7 @@ section{
     border-radius: 10px;
 }
 .init {
-    width: 80vh;
+    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -476,7 +476,7 @@ section{
 .init__container {
     color: white;
     margin: auto;
-    width: 100%;
+    width: 80vw;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -581,5 +581,21 @@ section{
 .button:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(0.9);
+}
+@media screen and (max-width: 900px) {
+    .init_logo{
+        width: 300px;
+    }
+    .init__container--remember-me {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .init_logo{
+        width: 200px;
+    }
+    .init__container--remember-me {
+        width: 100%;
+    }
 }
 /*-----init end----------*/
